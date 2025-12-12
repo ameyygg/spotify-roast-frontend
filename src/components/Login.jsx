@@ -3,7 +3,7 @@ import axios from 'axios';
 const handleLogin = async (e) => {
     e.preventDefault();
 
-    window.location.href = 'http://localhost:3000/api/auth/login';
+    window.location.href = 'https://spotify-roast-backend.onrender.com/api/auth/login';
 }
 
 const Login = () => {

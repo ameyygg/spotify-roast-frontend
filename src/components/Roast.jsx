@@ -45,7 +45,7 @@ const Roast = () => {
       }
 
       try {
-        const res = await axios.get("http://localhost:3000/api/spotify/user-data", {
+        const res = await axios.get("https://spotify-roast-backend.onrender.com/api/spotify/user-data", {
           params: { userId }
         });
         const responseSummary = res.data && res.data.summary ? res.data.summary : null;
@@ -88,7 +88,7 @@ const Roast = () => {
     }
 
     try {
-      const res = await axios.post("http://localhost:3000/api/roast/generate", {
+      const res = await axios.post("https://spotify-roast-backend.onrender.com/api/roast/generate", {
         summary,
         tone: "brutal" // change tone here if desired ('playful','soft','brutal')
       });
